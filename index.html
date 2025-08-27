@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Geostar+Fill&family=Hind+Madurai:wght@300;400;500;600;700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Manrope:wght@200..800&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Raleway:ital,wght@0,100..900;1,100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body class="open-sans-main">
+    <!-- Navbar -->
+  <nav class="navbar">
+    <!-- Left Section -->
+    <div class="nav-left">
+      <img src="assets/logo.png" alt="logo" class="logo">
+      <span class="site-name">Emergency Hotline</span>
+    </div>
+
+    <!-- Right Section -->
+    <div class="nav-right">
+      <div class="nav-item">
+        <img src="assets/heart.png" alt="heart" class="icon">
+        <span id="heartCount">0</span>
+      </div>
+      <div class="nav-item">
+        <img src="assets/coin.png" alt="coins" class="icon">
+        <span id="coins">100</span>
+      </div>
+      <div class="nav-item-copy">
+        <span id="copyCount">0 copy</span>
+      </div>
+    </div>
+  </nav>
+
+   <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-content">
+      <img src="assets/logo-dark.png" alt="hero-logo" class="hero-logo">
+      <h1 class="hero-title">Emergency Service Directory</h1>
+      <p class="hero-slogan">Government Emergency Services at Your Fingertip – A Project by  Government of the People’s Republic of Bangladesh</p>
+    </div>
+  </section>
+
+
+
+   <!-- Main Section -->
+  <main class="main-section">
+    
+    <!-- Card Section -->
+    <section class="card-section">
+      <h2>Emergency Services</h2>
+      <div class="card-grid">
+        
+        <!-- Example Card -->
+        <div class="card">
+          <div class="card-header">
+            <img src="assets/emergency.png" alt="service" class="card-icon">
+            <span class="heart" onclick="increaseHeart()">💗</span>
+          </div>
+          <div class="card-body">
+            <h3>পুলিশ <br><small>Police</small></h3>
+            <p class="number">999</p>
+            <span class="badge">Law</span>
+          </div>
+          <div class="card-footer">
+            <button class="btn copy-btn" onclick="copyNumber('999', 'Police')">📋 Copy</button>
+            <button class="btn call-btn" onclick="makeCall('Police', '999')">📞 Call</button>
+          </div>
+        </div>
+
+        <!-- Repeat 5+ more cards -->
+        <div class="card">
+          <div class="card-header">
+            <img src="assets/police.png" alt="service" class="card-icon">
+            <span class="heart" onclick="increaseHeart()">💗</span>
+          </div>
+          <div class="card-body">
+            <h3>অগ্নিনির্বাপক <br><small>Fire Service</small></h3>
+            <p class="number">199</p>
+            <span class="badge">Rescue</span>
+          </div>
+          <div class="card-footer">
+            <button class="btn copy-btn" onclick="copyNumber('199', 'Fire Service')">📋 Copy</button>
+            <button class="btn call-btn" onclick="makeCall('Fire Service', '199')">📞 Call</button>
+          </div>
+        </div>
+
+
+         <div class="card">
+          <div class="card-header">
+            <img src="assets/fire-service.png" alt="service" class="card-icon">
+            <span class="heart" onclick="increaseHeart()">💗</span>
+          </div>
+          <div class="card-body">
+            <h3>অগ্নিনির্বাপক <br><small>Fire Service</small></h3>
+            <p class="number">199</p>
+            <span class="badge">Rescue</span>
+          </div>
+          <div class="card-footer">
+            <button class="btn copy-btn" onclick="copyNumber('199', 'Fire Service')">📋 Copy</button>
+            <button class="btn call-btn" onclick="makeCall('Fire Service', '199')">📞 Call</button>
+          </div>
+        </div>
+
+
+         <div class="card">
+          <div class="card-header">
+            <img src="assets/ambulance.png" alt="service" class="card-icon">
+            <span class="heart" onclick="increaseHeart()">💗</span>
+          </div>
+          <div class="card-body">
+            <h3>অগ্নিনির্বাপক <br><small>Fire Service</small></h3>
+            <p class="number">199</p>
+            <span class="badge">Rescue</span>
+          </div>
+          <div class="card-footer">
+            <button class="btn copy-btn" onclick="copyNumber('199', 'Fire Service')">📋 Copy</button>
+            <button class="btn call-btn" onclick="makeCall('Fire Service', '199')">📞 Call</button>
+          </div>
+        </div>
+
+
+         <div class="card">
+          <div class="card-header">
+            <img src="assets/emergency.png" alt="service" class="card-icon">
+            <span class="heart" onclick="increaseHeart()">💗</span>
+          </div>
+          <div class="card-body">
+            <h3>অগ্নিনির্বাপক <br><small>Fire Service</small></h3>
+            <p class="number">199</p>
+            <span class="badge">Rescue</span>
+          </div>
+          <div class="card-footer">
+            <button class="btn copy-btn" onclick="copyNumber('199', 'Fire Service')">📋 Copy</button>
+            <button class="btn call-btn" onclick="makeCall('Fire Service', '199')">📞 Call</button>
+          </div>
+        </div>
+
+         <div class="card">
+          <div class="card-header">
+            <img src="assets/emergency.png" alt="service" class="card-icon">
+            <span class="heart" onclick="increaseHeart()">💗</span>
+          </div>
+          <div class="card-body">
+            <h3>অগ্নিনির্বাপক <br><small>Fire Service</small></h3>
+            <p class="number">199</p>
+            <span class="badge">Rescue</span>
+          </div>
+          <div class="card-footer">
+            <button class="btn copy-btn" onclick="copyNumber('199', 'Fire Service')">📋 Copy</button>
+            <button class="btn call-btn" onclick="makeCall('Fire Service', '199')">📞 Call</button>
+          </div>
+
+
+
+        </div>
+         <div class="card">
+          <div class="card-header">
+            <img src="assets/emergency.png" alt="service" class="card-icon">
+            <span class="heart" onclick="increaseHeart()">💗</span>
+          </div>
+          <div class="card-body">
+            <h3>অগ্নিনির্বাপক <br><small>Fire Service</small></h3>
+            <p class="number">199</p>
+            <span class="badge">Rescue</span>
+          </div>
+          <div class="card-footer">
+            <button class="btn copy-btn" onclick="copyNumber('199', 'Fire Service')">📋 Copy</button>
+            <button class="btn call-btn" onclick="makeCall('Fire Service', '199')">📞 Call</button>
+          </div>
+        </div>
+
+
+         <div class="card">
+          <div class="card-header">
+            <img src="assets/emergency.png" alt="service" class="card-icon">
+            <span class="heart" onclick="increaseHeart()">💗</span>
+          </div>
+          <div class="card-body">
+            <h3>অগ্নিনির্বাপক <br><small>Fire Service</small></h3>
+            <p class="number">199</p>
+            <span class="badge">Rescue</span>
+          </div>
+          <div class="card-footer">
+            <button class="btn copy-btn" onclick="copyNumber('199', 'Fire Service')">📋 Copy</button>
+            <button class="btn call-btn" onclick="makeCall('Fire Service', '199')">📞 Call</button>
+          </div>
+        </div>
+
+
+         <div class="card">
+          <div class="card-header">
+            <img src="assets/emergency.png" alt="service" class="card-icon">
+            <span class="heart" onclick="increaseHeart()">💗</span>
+          </div>
+          <div class="card-body">
+            <h3>অগ্নিনির্বাপক <br><small>Fire Service</small></h3>
+            <p class="number">199</p>
+            <span class="badge">Rescue</span>
+          </div>
+          <div class="card-footer">
+            <button class="btn copy-btn" onclick="copyNumber('199', 'Fire Service')">📋 Copy</button>
+            <button class="btn call-btn" onclick="makeCall('Fire Service', '199')">📞 Call</button>
+          </div>
+        </div>
+
+
+      </div>
+    </section>
+
+    <!-- History Section -->
+    <section class="history-section">
+      <div class="history-header">
+        <h2>📜 Call History</h2>
+        <button class="clear-btn" onclick="clearHistory()">Clear History</button>
+      </div>
+      <ul id="historyList"></ul>
+    </section>
+
+  </main>
+
+  <script src="script.js"></script>
+       
+</body>
+</html>
