@@ -310,14 +310,14 @@ body {
 .number {
   font-size: 16px;
   font-weight: bold;
-  color: #28a745;
+  color: black;
 }
 
 .badge {
   display: inline-block;
   padding: 4px 8px;
   background: #e1f3e1;
-  color: #218838;
+  color: black;
   font-size: 12px;
   border-radius: 6px;
   margin-top: 6px;
@@ -369,22 +369,27 @@ body {
 
 .clear-btn {
   padding: 5px 10px;
-  font-size: 13px;
+  font-size: 15px;
   border: none;
-  background: #dc3545;
+  background: green;
   color: white;
-  border-radius: 6px;
+  border-radius: 20px;
   cursor: pointer;
 }
 
 #historyList {
   list-style: none;
-  font-size: 14px;
+  font-size: 20px;
+  
 }
 
 #historyList li {
   padding: 6px 0;
   border-bottom: 1px solid #eee;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  border-radius: 8px;
+  padding: 10px;
+  margin-bottom: 20px;
 }
 
 /* Responsive */
