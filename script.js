@@ -18,10 +18,10 @@ function decreaseCoins(amount = 20) {
   if (coins >= amount) {
     coins -= amount;
     coinsEl.textContent = coins;
-    return true; // success
+    return true; 
   } else {
     alert("Not enough coins!");
-    return false; // failed
+    return false; 
   }
 }
 
@@ -32,7 +32,7 @@ function increaseCopy() {
 
 
 
-// Demo: Click navbar to increase heart (for testing only)
+
 document.querySelector(".navbar").addEventListener("click", () => {
   increaseHeart();
 });
@@ -65,7 +65,7 @@ function increaseCopy() {
   copyCountEl.textContent = copyCount;
 }
 
-// Demo: Click hero section to test coin deduction
+
 document.querySelector(".hero").addEventListener("click", () => {
   decreaseCoins();
 });

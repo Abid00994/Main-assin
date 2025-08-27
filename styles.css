@@ -21,18 +21,6 @@ body {
   background: #f4f7fb;
 }
 
-/* Navbar */
-.navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 12px 20px;
-  background: #ffffff;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-  position: sticky;
-  top: 0;
-  z-index: 1000;
-}
 
 /* Reset */
 * {
@@ -95,14 +83,14 @@ body {
 }
 
 .nav-item-copy {
-     display: flex;
+  display: flex;
   align-items: center;
   gap: 6px;
   font-size: 14px;
   color: white;
   background-color: green;
-    padding: 6px 10px;
-    border-radius: 20px;
+  padding: 6px 10px;
+  border-radius: 20px;
 }
 
 .icon {
