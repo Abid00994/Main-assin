@@ -38,37 +38,6 @@ document.querySelector(".navbar").addEventListener("click", () => {
 });
 
 
-let heartCount1 = 0;
-let coins1 = 100;
-let copyCount1 = 0;
-
-const heartCountEl2 = document.getElementById("heartCount");
-const coinsEl2 = document.getElementById("coins");
-const copyCountEl2 = document.getElementById("copyCount");
-
-function increaseHeart() {
-  heartCount++;
-  heartCountEl.textContent = heartCount;
-}
-
-function decreaseCoins(amount = 20) {
-  if (coins >= amount) {
-    coins -= amount;
-    coinsEl.textContent = coins;
-  } else {
-    alert("Not enough coins!");
-  }
-}
-
-function increaseCopy() {
-  copyCount++;
-  copyCountEl.textContent = copyCount;
-}
-
-
-document.querySelector(".hero").addEventListener("click", () => {
-  decreaseCoins();
-});
 
 
 
